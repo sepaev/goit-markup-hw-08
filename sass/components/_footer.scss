@@ -1,0 +1,54 @@
+.footer {
+  min-height: 252px;
+  color: var(--white-color);
+  background: var(--secondary-background-color);
+
+  &__container {
+    @extend .container;
+    padding: 60px var(--standart-15px);
+    align-items: baseline;
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: bold;
+  }
+}
+
+.footer-contacts {
+  text-align: left;
+
+  &__set {
+    display: block;
+    width: 231px;
+  }
+
+  &__link {
+    display: block;
+    padding-bottom: 9px;
+  }
+
+  &__link--map {
+    color: var(--white-color);
+  }
+
+  &__link--contact {
+    font-weight: normal;
+    line-height: 1.71;
+    color: var(--passive-link-color-footer);
+  }
+}
+
+.made-by {
+  margin: auto;
+  display: inline-flexbox;
+  text-align: center;
+  color: var(--secondary-text-color);
+}

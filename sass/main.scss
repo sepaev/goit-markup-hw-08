@@ -1,0 +1,24 @@
+@import './base/normalize';
+@import './utils/variables';
+@import './utils/placeholder';
+@import './components/common';
+@import './components/logo';
+@import './components/header';
+@import './components/social';
+
+@import './components/studio';
+@import './components/studio__hero';
+@import './components/studio__features';
+@import './components/studio__work';
+@import './components/studio__team';
+@import './components/studio__clients';
+@import './components/studio__modal-window';
+
+@import './components/portfolio';
+@import './components/portfolio__filters';
+@import './components/portfolio__product';
+
+@import './components/contacts';
+
+@import './components/footer';
+@import './components/footer__mailing';

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио - goit-markup-hw-07</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"
+          ><span class="logo__first-word">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
+              <svg class="mail" width="16" height="12">
+                <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111">
+              <svg class="phone" width="10" height="16">
+                <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <div class="portfolio__container">
+          <h1 class="visually-hidden">Наши проэкты</h1>
+          <!-- кнопки -->
+          <ul class="filters">
+            <li class="filters__item">
+              <button class="filters__button">Все</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button">Веб-сайты</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button">Приложения</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- сетка -->
+          <ul class="product">
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/website-01.jpg" alt="Веб-сайт" />
+                <span class="product__description"
+                  >Технокряк это современная площадка распространения
+                  коронавируса. Компании используют эту платформу для цифрового
+                  шпионажа и атак на защищённые сервера конкурентов.</span
+                >
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Технокряк</h3>
+                <p class="product-content__text">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/design-01.jpg" alt="Дизайн" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="product-content__text">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/app-01.jpg" alt="Приложение" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Ресторан Seafood</h3>
+                <p class="product-content__text">Приложение</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img
+                  src="./images/portfolio/marketing-01.jpg"
+                  alt="Маркетинг"
+                />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Проект Prime</h3>
+                <p class="product-content__text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/app-02.jpg" alt="Приложение" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Проект Boxes</h3>
+                <p class="product-content__text">Приложение</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/website-02.jpg" alt="Веб-сайт" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">
+                  Inspiration has no Borders
+                </h3>
+                <p class="product-content__text">Веб-сайт</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/design-02.jpg" alt="Дизайн" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">
+                  Издание Limited Edition
+                </h3>
+                <p class="product-content__text">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img
+                  src="./images/portfolio/marketing-02.jpg"
+                  alt="Маркетинг"
+                />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Проект LAB</h3>
+                <p class="product-content__text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="product__item">
+              <div class="product__wrapper">
+                <img src="./images/portfolio/app-03.jpg" alt="Приложение" />
+                <span class="product__description">Описание</span>
+              </div>
+              <div class="product-content">
+                <h3 class="product-content__heading">Growing Business</h3>
+                <p class="product-content__text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!--/* Подвал */-->
+      <div class="container footer__container">
+        <div class="footer-contacts">
+          <a class="logo footer__logo" href="./index.html"
+            ><span class="logo__first-word">Web</span>Studio</a
+          >
+          <h3 class="visually-hidden">Контакты</h3>
+          <address class="footer-contacts__address">
+            <ul class="footer-contacts__set">
+              <li>
+                <a
+                  class="footer-contacts__link footer-contacts__link--map"
+                  href="https://goo.gl/maps/ZJ7xZnVnSobTsskUA"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-contacts__link footer-contacts__link--contact"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-contacts__link footer-contacts__link--contact"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="footer__title">присоединяйтесь</h3>
+          <ul class="footer-social__set">
+            <li>
+              <a href="#" class="social-link footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
+                  <use href="./images/svg/sprite.svg#main-ig-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
+                  <use href="./images/svg/sprite.svg#main-twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
+                  <use href="./images/svg/sprite.svg#main-fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
+                  <use href="./images/svg/sprite.svg#main-in-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-mailing">
+          <label class="form-mailing__email-label" for="email-footer">
+            <span class="footer__title">Подпишитесь на рассылку</span>
+            <input
+              type="email"
+              id="email-footer"
+              name="email"
+              placeholder="E-mail"
+              class="form-mailing__email-input"
+            />
+          </label>
+          <button
+            type="submit"
+            class="form-mailing__subscribe-button"
+            value="subscribe"
+          >
+            <span class="form-mailing__text">Подписаться</span>
+            <svg class="form-mailing__button-icon" width="24" height="24">
+              <use href="./images/svg/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="made-by">
+        <hr class="divider" />
+        <span
+          >2021 | Made by Sepaev. GoIt Student. Fe Core 33 Online. ReactTeam
+          &#174;</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
