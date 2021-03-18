@@ -5,13 +5,11 @@
 
   &__container {
     @extend .container;
-    padding: 60px var(--standart-15px);
     align-items: baseline;
     height: 100%;
   }
 
   &__title {
-    margin-bottom: 20px;
     text-align: left;
     font-size: 14px;
     line-height: 1.16;
@@ -47,8 +45,6 @@
 }
 
 .made-by {
-  margin: auto;
-  display: inline-flexbox;
   text-align: center;
   color: var(--secondary-text-color);
 }

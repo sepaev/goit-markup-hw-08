@@ -2,7 +2,7 @@
   @extend .section;
 
   &__title {
-    display: block;
+
     font-weight: bold;
     font-size: 36px;
     line-height: 1.167;
@@ -10,16 +10,14 @@
   }
 
   &__set {
-    padding: 0;
-    margin: 0;
+
     list-style: none;
-    display: flex;
     flex-wrap: wrap;
   }
 
   &__item {
     @extend %standart-transition--color_and_border;
-    margin-top: var(--standart-50px);
+
     background: var(--white-color);
   }
 
@@ -34,14 +32,14 @@
 
     cursor: pointer;
     fill: currentColor;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     color: var(--passive-background-color);
   }
 
   &__item:not(:last-child) {
-    margin-right: 28px;
+
   }
 
   &__item:hover a,

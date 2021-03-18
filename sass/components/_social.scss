@@ -1,5 +1,4 @@
 .social-link  {
-  padding: 0;
   border: 0;
   width: 44px;
   height: 44px;
@@ -7,7 +6,6 @@
 
   cursor: pointer;
   align-items: flex-start;
-  display: inline-block;
   text-align: center;
 
   &__icon {
@@ -15,13 +13,12 @@
     height: 20px;
     fill: currentColor;
     text-align: center;
-    margin: 12px;
+
   }
 }
 
 .footer-social {
-  margin-top: 12px;
-  margin-left: 70px;
+
 
   &__title {
     font-size: 14px;
@@ -29,12 +26,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-    padding-bottom: 20px;
+
     text-align: left;
   }
 
   &__set {
-    display: inline-flex;
     justify-content: space-between;
     line-height: 0;
     width: 206px;
@@ -54,7 +50,7 @@
 }
 
 .team-social {
-  display: inline-flex;
+
   justify-content: space-between;
   width: 100%;
   line-height: 0;
