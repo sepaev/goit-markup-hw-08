@@ -19,14 +19,14 @@
         <a class="logo header__logo" href="./index.html"
           ><span class="logo__first-word">Web</span>Studio</a
         >
+        <button type="button" class="header__button">
+          <svg class="header-nav__icon" width="24" height="16">
+            <use href="./images/svg/sprite.svg#icon__nav-button"></use>
+            <use href="./images/svg/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
         <nav>
           <ul class="header-nav">
-            <button type="header-nav__button">
-              <svg class="header-nav__icon" width="24" height="16">
-                <use href="./images/svg/sprite.svg#icon__nav-button"></use>
-                <use href="./images/svg/sprite.svg#close-icon"></use>
-              </svg>
-            </button>
             <li class="header-nav__item">
               <a
                 class="header-nav__link header-nav__link--current"
@@ -173,15 +173,14 @@
                 <h3 class="team__member">Игорь Демьяненк</h3>
                 <p class="team__profession">Product Designer</p>
                 <ul class="team-social">
-                  <li>
-                    <a href="#"></a>
+                  <li class="team-social__item">
                     <a href="#" class="social-link team-social__link">
                       <svg class="social-link__icon" width="44" height="44">
                         <use href="./images/svg/sprite.svg#main-ig-icon"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-social__item">
                     <a href="#" class="social-link team-social__link">
                       <svg class="social-link__icon" width="44" height="44">
                         <use
@@ -190,14 +189,14 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-social__item">
                     <a href="#" class="social-link team-social__link">
                       <svg class="social-link__icon" width="44" height="44">
                         <use href="./images/svg/sprite.svg#main-fb-icon"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="team-social__item">
                     <a href="#" class="social-link team-social__link">
                       <svg class="social-link__icon" width="44" height="44">
                         <use href="./images/svg/sprite.svg#main-in-icon"></use>
@@ -339,51 +338,53 @@
 
       <!-- Секция постоянные клиенты -->
       <section class="clients">
-        <h2 class="clients__title">Постоянные клиенты</h2>
-        <ul class="clients__set">
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="44.27px" height="49.23px">
-                <use href="./images/svg/sprite.svg#icon-logo1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="40" height="52">
-                <use href="./images/svg/sprite.svg#icon-logo2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="41" height="42.6">
-                <use href="./images/svg/sprite.svg#icon-logo3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="79.66" height="42.02">
-                <use href="./images/svg/sprite.svg#icon-logo4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="59" height="47">
-                <use href="./images/svg/sprite.svg#icon-logo5"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="88.48" height="45.44">
-                <use href="./images/svg/sprite.svg#icon-logo6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="clients__container">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="clients__set">
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="44.27px" height="49.23px">
+                  <use href="./images/svg/sprite.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="40" height="52">
+                  <use href="./images/svg/sprite.svg#icon-logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="41" height="42.6">
+                  <use href="./images/svg/sprite.svg#icon-logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="79.66" height="42.02">
+                  <use href="./images/svg/sprite.svg#icon-logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="59" height="47">
+                  <use href="./images/svg/sprite.svg#icon-logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="88.48" height="45.44">
+                  <use href="./images/svg/sprite.svg#icon-logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">

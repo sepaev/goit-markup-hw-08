@@ -1,8 +1,9 @@
-.social-link  {
+.social-link {
   border: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  display: flex;
 
   cursor: pointer;
   align-items: flex-start;
@@ -13,13 +14,11 @@
     height: 20px;
     fill: currentColor;
     text-align: center;
-
+    margin: auto;
   }
 }
 
 .footer-social {
-
-
   &__title {
     font-size: 14px;
     line-height: 1.16;
@@ -50,15 +49,28 @@
 }
 
 .team-social {
-
+  display: inline-flex;
   justify-content: space-between;
-  width: 100%;
+  // width: 60%;
   line-height: 0;
+  margin: 0 auto;
+  height: 44px;
+  text-align: center;
+
+  &__item {
+    width: 44px;
+  }
 
   &__link {
     @extend %standart-transition--color_and_background;
+    // margin-right: 10px;
     color: var(--grey-color);
     background: var(--social-background-main-color);
+  }
+
+  &__item {
+    margin-right: 10px;
+    color: red;
   }
 
   &__link:hover,

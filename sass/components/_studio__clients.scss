@@ -1,28 +1,38 @@
 .clients {
   @extend .section;
 
-  &__title {
+  &__container {
+    @extend .container;
+    display: block;
+  }
 
+  &__title {
+    @extend .section-title;
     font-weight: bold;
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: 28px;
     line-height: 1.167;
     letter-spacing: 0.03em;
   }
 
   &__set {
-
     list-style: none;
-    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--standart-15px));
+    margin-top: calc(-1 * var(--standart-15px));
   }
 
   &__item {
     @extend %standart-transition--color_and_border;
-
+    flex-basis: calc(50% - var(--standart-15px));
+    margin-left: var(--standart-15px);
+    margin-top: var(--standart-15px);
     background: var(--white-color);
+    display: inline-flex;
   }
 
   &__link {
     @extend %standart-transition--color_and_border;
+    display: flex;
     max-width: 210px;
     min-width: 170px;
     border: 1px solid var(--grey-color);
@@ -39,7 +49,6 @@
   }
 
   &__item:not(:last-child) {
-
   }
 
   &__item:hover a,

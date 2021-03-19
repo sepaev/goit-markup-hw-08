@@ -1,8 +1,9 @@
 .logo {
   font-family: var(--second-font);
   font-weight: 700;
-  font-size: 26px;
+  // font-size: 26px;
   line-height: 1.17;
+  font-size: 24px;
 
   &__first-word {
     color: var(--logo-main-color);
@@ -11,6 +12,7 @@
 
 .header__logo {
   color: var(--black-color);
+  margin: auto 0;
 }
 
 .footer__logo {

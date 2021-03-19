@@ -1,21 +1,21 @@
 .features {
   @extend .section;
 
-
   &__content {
-
   }
 
   &__content-item {
-    width: 270px;
+    width: auto;
+    @media (min-width: $max-phone-width) {
+      width: 270px;
+    }
   }
 
   &__content-item:not(:last-child) {
-
+    margin-bottom: var(--standart-30px);
   }
 
   &__icon-container {
-
     border: 0;
     width: 100%;
     height: 120px;
@@ -23,6 +23,8 @@
     background: var(--light-grey-color);
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    margin-bottom: var(--standart-30px);
   }
 
   &__icon {
@@ -30,6 +32,7 @@
     height: 70px;
     cursor: pointer;
     fill: currentColor;
+    margin: auto;
   }
 
   &__title {
@@ -39,9 +42,13 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-align: left;
     color: var(--main-text-color);
     margin-bottom: 10px;
+    text-align: center;
+
+    @media (min-width: $max-phone-width) {
+      text-align: left;
+    }
   }
 
   &__text {

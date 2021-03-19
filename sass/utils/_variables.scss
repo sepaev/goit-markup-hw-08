@@ -29,7 +29,10 @@
   --standart-15px: 15px;
   --standart-30px: 30px;
   --standart-50px: 50px;
+  --standart-60px: 60px;
   --standart-94px: 94px;
   --main-font: 'Roboto', sans-serif; /*основной шрифт*/
   --second-font: 'Releway', sans-serif; /*дополнительный шрифт*/
 }
+
+$max-phone-width: 500px;
