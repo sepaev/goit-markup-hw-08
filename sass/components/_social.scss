@@ -34,6 +34,9 @@
     line-height: 0;
     width: 206px;
     color: var(--social-background-footer-color);
+    @media (max-width: $max-phone-width) {
+      display: inline-flex;
+    }
   }
 
   &__link {

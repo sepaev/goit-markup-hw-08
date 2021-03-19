@@ -1,4 +1,6 @@
 .footer {
+  @extend .section;
+  padding-bottom: 0;
   min-height: 252px;
   color: var(--white-color);
   background: var(--secondary-background-color);
@@ -7,25 +9,33 @@
     @extend .container;
     align-items: baseline;
     height: 100%;
+    padding-bottom: var(--standart-60px);
   }
 
   &__title {
-    text-align: left;
     font-size: 14px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
     font-weight: bold;
+    text-align: center;
+    // text-align: left;
+    @media (max-width: $max-phone-width) {
+      padding-top: var(--standart-60px);
+      padding-bottom: var(--standart-20px);
+    }
   }
 }
 
 .footer-contacts {
-  text-align: left;
+  text-align: center;
+  // text-align: left;
 
   &__set {
     display: block;
-    width: 231px;
+    width: auto;
+    // width: 231px;
   }
 
   &__link {

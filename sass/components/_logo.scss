@@ -18,4 +18,8 @@
 .footer__logo {
   color: var(--white-color);
   line-height: 1.19;
+  margin-bottom: 20px;
+  @media (max-width: $max-phone-width) {
+    display: inline-flex;
+  }
 }
