@@ -74,6 +74,10 @@ body {
 
   background: var(--main-background-color);
   text-align: center;
+
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 button {

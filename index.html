@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-body>
     <!-- ШАПКА -->
     <header class="header">
       <div class="header__container">
@@ -59,7 +59,11 @@
           <ul class="header-contacts">
             <li class="header-contacts__item">
               <a class="header-contacts__link" href="mailto:info@devstudio.com">
-                <svg class="mail" width="16" height="12">
+                <svg
+                  class="header-contacts__icon-container mail"
+                  width="16"
+                  height="12"
+                >
                   <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
                 </svg>
                 info@devstudio.com
@@ -67,7 +71,11 @@
             </li>
             <li class="header-contacts__item">
               <a class="header-contacts__link" href="tel:+380961111111">
-                <svg class="phone" width="10" height="16">
+                <svg
+                  class="header-contacts__icon-container phone"
+                  width="10"
+                  height="16"
+                >
                   <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
                 </svg>
                 +38 096 111 11 11
@@ -525,7 +533,6 @@
 
     <!-- М О Д А Л К А -->
     <section data-modal class="backdrop backdrop__is-hidden">
-      <!--    <div data-modal class="backdrop"> -->
       <div class="modal">
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -612,5 +619,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/menu.js"></script>
   </body>
 </html>

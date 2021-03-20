@@ -25,14 +25,16 @@
   &__menu-container {
     @media (max-width: $max-phone-width) {
       background-color: var(--white-color);
-      width: 100vh;
+      outline: 1px solid var(--white-color);
+      width: 100%;
       height: 100vh;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateX(-1px);
+      // transform: translateX(-1px);
       z-index: 500;
       padding: 48px 40px;
+      overflow-y: scroll;
     }
   }
 
@@ -72,7 +74,7 @@
 .header-nav {
   font-weight: 500;
   letter-spacing: 0.02em;
-  margin-bottom: 302px;
+  margin-bottom: 306px;
 
   @media (min-width: $max-phone-width) {
     display: flex;
@@ -90,10 +92,6 @@
       line-height: 1.175;
       letter-spacing: 0.02em;
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 32px;
   }
 
   &__link:hover,
@@ -119,8 +117,12 @@
     display: flex;
     // margin: auto;
   }
+
   &__item:not(:last-child) {
-    margin-right: var(--standart-50px);
+    margin: 0 0 32px 0;
+    @media (min-width: $max-phone-width) {
+      margin: 0 var(--standart-50px) 0 0;
+    }
   }
 }
 
@@ -174,16 +176,15 @@
     color: var(--active-link-color);
     @extend %standart-transition--color;
   }
-}
 
-.mail {
-  cursor: pointer;
-  fill: currentColor;
-  vertical-align: middle;
-}
-
-.phone {
-  @extend .mail;
+  &__icon-container {
+    cursor: pointer;
+    fill: currentColor;
+    vertical-align: middle;
+    @media (max-width: $max-phone-width) {
+      display: none;
+    }
+  }
 }
 
 .contact--map {
