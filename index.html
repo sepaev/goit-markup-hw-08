@@ -19,47 +19,84 @@
         <a class="logo header__logo" href="./index.html"
           ><span class="logo__first-word">Web</span>Studio</a
         >
-        <button type="button" class="header__button">
-          <svg class="header-nav__icon" width="24" height="16">
-            <use href="./images/svg/sprite.svg#icon__nav-button"></use>
-            <use href="./images/svg/sprite.svg#close-icon"></use>
+        <button type="button" data-menu-button class="header__menu-button">
+          <svg
+            class="header__icon-container"
+            width="24"
+            height="16"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="header__menu-icon"
+              href="./images/svg/sprite.svg#menu-icon"
+            ></use>
+            <use
+              class="header__close-icon"
+              href="./images/svg/sprite.svg#close-icon"
+            ></use>
           </svg>
         </button>
-        <nav>
-          <ul class="header-nav">
-            <li class="header-nav__item">
-              <a
-                class="header-nav__link header-nav__link--current"
-                href="./index.html"
-                >Студия</a
-              >
+        <div class="header__menu-container is-hidden" data-menu-container>
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a
+                  class="header-nav__link header-nav__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="mail" width="16" height="12">
+                  <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./contacts.html">Контакты</a>
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg class="phone" width="10" height="16">
+                  <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="mail" width="16" height="12">
-                <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="phone" width="10" height="16">
-                <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="header-social">
+            <li class="header-social__item">
+              <a class="header-social__link" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="https://www.instagram.com/"
+                >Twitter</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="https://www.instagram.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="header-social__item">
+              <a class="header-social__link" href="https://www.instagram.com/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 

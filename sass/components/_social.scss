@@ -92,3 +92,26 @@
     text-align: left;
   }
 }
+
+.header-social {
+  display: none;
+  @media (max-width: $max-phone-width) {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    // &__item:not(:last-child) {
+    //   margin-right: 20px;
+    // }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}

@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <symbol id="icon__nav-button" viewBox="0 0 24 16">
+        <symbol id="menu-icon" viewBox="0 0 24 16">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z" />
         </symbol>
