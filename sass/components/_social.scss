@@ -34,7 +34,7 @@
     line-height: 0;
     width: 206px;
     color: var(--social-background-footer-color);
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       display: inline-flex;
     }
   }
@@ -95,7 +95,7 @@
 
 .header-social {
   display: none;
-  @media (max-width: $max-phone-width) {
+  @media (max-width: $phone-width-divider) {
     width: 80vw;
     display: flex;
     justify-content: space-between;
@@ -113,5 +113,8 @@
     letter-spacing: 0.02em;
 
     color: #2196f3;
+    @media (max-width: $miniphone-width-divider) {
+      font-size: 14px;
+    }
   }
 }

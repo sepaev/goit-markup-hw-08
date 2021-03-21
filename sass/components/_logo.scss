@@ -19,7 +19,7 @@
   color: var(--white-color);
   line-height: 1.19;
   margin-bottom: 20px;
-  @media (max-width: $max-phone-width) {
+  @media (max-width: $phone-width-divider) {
     display: inline-flex;
   }
 }

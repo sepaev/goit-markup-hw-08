@@ -15,13 +15,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width: $max-phone-width) {
+  @media (min-width: $phone-width-divider) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/main-bg.jpg');
+    max-width: 768px;
+  }
+
+  @media (min-width: $tablet-width-divider) {
     max-width: 768px;
   }
 
@@ -36,7 +40,7 @@
     // width: 696px;
     // height: 120px;
 
-    @media (min-width: $max-phone-width) {
+    @media (min-width: $phone-width-divider) {
       line-height: 1.36;
       font-size: 44px;
       max-width: 768px;

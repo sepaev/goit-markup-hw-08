@@ -1,15 +1,13 @@
-
 .product {
-  list-style: none;
+  // list-style: none;
   flex-wrap: wrap;
 
-  
   &__wrapper {
     cursor: pointer;
     position: relative;
     overflow: hidden;
   }
-    
+
   &__description {
     position: absolute;
     left: 0;
@@ -27,15 +25,18 @@
   }
 
   &__item {
-    flex-basis: calc(100% / 3 - var(--standart-30px));
-
-    
+    // flex-basis: calc(100% / 3 - var(--standart-30px));
+    // margin-bottom: var(--standart-30px);
     text-align: left;
     background: var(--white-color);
     outline: 1px solid var(--border-color-outline);
     @extend %standart-transition--box-shadow;
   }
-  
+
+  &__item:not(:last-child) {
+    margin-bottom: var(--standart-30px);
+  }
+
   &__item:hover,
   &__item:focus {
     border: 1px solid #eeeeee;
@@ -43,7 +44,7 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-    
+
   &__item:hover &__description,
   &__item:focus &__description {
     transform: translateY(0%);
@@ -51,16 +52,16 @@
 }
 
 .product-content {
-  
+  padding: 20px 24px;
   &__heading {
-
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     color: var(--main-text-color);
     letter-spacing: 0.06em;
+    margin-bottom: 4px\;;
   }
-  
+
   &__text {
     font-size: 16px;
     font-weight: normal;

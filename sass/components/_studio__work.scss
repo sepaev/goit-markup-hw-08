@@ -2,7 +2,7 @@
   display: none;
   @extend .section;
 
-  @media (max-width: $max-phone-width) {
+  @media (max-width: $phone-width-divider) {
     display: none;
   }
 

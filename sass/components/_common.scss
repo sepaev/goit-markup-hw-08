@@ -109,7 +109,7 @@ main {
   text-align: center;
   width: 100%;
 
-  @media (min-width: $max-phone-width) {
+  @media (min-width: $phone-width-divider) {
     padding: var(--standart-94px) var(--standart-15px);
   }
 }

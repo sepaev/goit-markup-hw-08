@@ -34,7 +34,7 @@
   font-weight: normal;
   font-size: 12px;
   overflow: auto;
-  @media (max-width: 340px) {
+  @media (max-width: $miniphone-width-divider) {
     padding: 25px;
     margin: var(--standart-30px) var(--standart-15px);
   }
@@ -47,7 +47,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
-    @media (max-width: 340px) {
+    @media (max-width: $miniphone-width-divider) {
       margin-bottom: 6px;
     }
   }
@@ -60,7 +60,7 @@
   &__wrapper {
     position: relative;
     margin-bottom: 10px;
-    @media (max-width: 340px) {
+    @media (max-width: $miniphone-width-divider) {
       margin-bottom: 5px;
     }
   }
@@ -134,7 +134,7 @@
     padding-bottom: 4px;
     text-align: left;
     color: var(--secondary-text-color);
-    @media (max-width: 340px) {
+    @media (max-width: $miniphone-width-divider) {
       padding-bottom: 2px;
     }
   }
@@ -145,9 +145,6 @@
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 12px 12px 42px;
-    // @media (max-width: 340px) {
-    //   padding: 6px 6px 6px 40px;
-    // }
   }
 
   &__textarea {
@@ -160,7 +157,7 @@
     box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 20px;
-    @media (max-width: 340px) {
+    @media (max-width: $miniphone-width-divider) {
       height: 80px;
       min-height: 80px;
     }
@@ -201,7 +198,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       font-size: 12px;
     }
   }

@@ -9,13 +9,13 @@
   width: 100%;
   display: flex;
 
-  @media (min-width: $max-phone-width) {
+  @media (min-width: $phone-width-divider) {
     height: 80px;
   }
 
   &__container {
     @extend .container;
-    @media (min-width: $max-phone-width) {
+    @media (min-width: $phone-width-divider) {
       display: inline-flex;
       justify-content: space-between;
     }
@@ -23,7 +23,7 @@
   }
 
   &__menu-container {
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       background-color: var(--white-color);
       outline: 1px solid var(--white-color);
       width: 100%;
@@ -35,11 +35,14 @@
       z-index: 500;
       padding: 48px 40px;
       overflow-y: scroll;
+      @media (max-width: $miniphone-width-divider) {
+        padding: 28px 20px;
+      }
     }
   }
 
   &__menu-container.is-hidden {
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       display: none;
     }
   }
@@ -54,13 +57,12 @@
     z-index: 1500;
     fill: currentColor;
     @extend %standart-transition--color;
-    @media (min-width: $max-phone-width) {
+    @media (min-width: $phone-width-divider) {
       display: none;
     }
   }
   &__menu-button:hover {
-    fill: var(--active-link-color);
-    color: inherit;
+    color: var(--active-link-color);
     @extend %standart-transition--color;
   }
 
@@ -76,6 +78,7 @@
 
   &__close-icon {
     display: none;
+    transform: translate(3px, 0);
   }
 }
 
@@ -83,8 +86,11 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   margin-bottom: 306px;
+  @media (max-width: $miniphone-width-divider) {
+    margin-bottom: 206px;
+  }
 
-  @media (min-width: $max-phone-width) {
+  @media (min-width: $phone-width-divider) {
     display: flex;
   }
 
@@ -93,12 +99,13 @@
     position: relative;
     color: var(--main-text-color);
     font-weight: 500;
-    @media (max-width: $max-phone-width) {
-      font-family: Roboto;
-
+    @media (max-width: $phone-width-divider) {
       font-size: 40px;
       line-height: 1.175;
       letter-spacing: 0.02em;
+    }
+    @media (max-width: $miniphone-width-divider) {
+      font-size: 30px;
     }
   }
 
@@ -113,7 +120,7 @@
   }
 
   &__link--current::after {
-    @media (min-width: $max-phone-width) {
+    @media (min-width: $phone-width-divider) {
       content: '';
     }
     width: 100%;
@@ -132,7 +139,10 @@
 
   &__item:not(:last-child) {
     margin: 0 0 32px 0;
-    @media (min-width: $max-phone-width) {
+    @media (max-width: $miniphone-width-divider) {
+      margin-bottom: 16px;
+    }
+    @media (min-width: $phone-width-divider) {
       margin: 0 var(--standart-50px) 0 0;
     }
   }
@@ -144,8 +154,11 @@
   position: relative;
   margin-bottom: 64px;
   height: 100px;
+  @media (max-width: $miniphone-width-divider) {
+    height: 70px;
+  }
 
-  @media (min-width: $max-phone-width) {
+  @media (min-width: $phone-width-divider) {
     display: block;
   }
 
@@ -153,7 +166,7 @@
     @extend %standart-transition--color;
     font-weight: 500;
     letter-spacing: 0.02em;
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       position: absolute;
     }
   }
@@ -162,6 +175,9 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.167;
+    @media (max-width: $miniphone-width-divider) {
+      font-size: 18px;
+    }
 
     color: var(--passive-link-color);
     bottom: 0;
@@ -171,7 +187,9 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 1.176;
-
+    @media (max-width: $miniphone-width-divider) {
+      font-size: 28px;
+    }
     color: var(--active-link-color);
     top: 0;
   }
@@ -194,7 +212,7 @@
     cursor: pointer;
     fill: currentColor;
     vertical-align: middle;
-    @media (max-width: $max-phone-width) {
+    @media (max-width: $phone-width-divider) {
       display: none;
     }
   }
