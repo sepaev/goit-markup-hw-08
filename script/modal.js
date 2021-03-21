@@ -15,4 +15,5 @@
     const method = isModalHidden ? "enableBodyScroll" : "disableBodyScroll";
     bodyScrollLock[method](refs.modal);
   }
+
 })()
