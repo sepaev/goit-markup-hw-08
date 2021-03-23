@@ -5,39 +5,49 @@
   position: relative;
   text-align: left;
   align-items: center;
-  height: 60px;
+  height: 80px;
   width: 100%;
   display: flex;
 
-  @media (min-width: $phone-width-divider) {
-    height: 80px;
+  @media (max-width: $phone-width-divider) {
+    height: 60px;
   }
 
   &__container {
     @extend .container;
+
     @media (min-width: $phone-width-divider) {
       display: inline-flex;
       justify-content: space-between;
     }
-    // padding: 24px var(--standart-15px) 25px;
   }
 
   &__menu-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+
     @media (max-width: $phone-width-divider) {
+      display: block;
       background-color: var(--white-color);
       outline: 1px solid var(--white-color);
       width: 100%;
       height: 100vh;
+      min-width: 400px;
       position: absolute;
       top: 0;
       left: 0;
-      // transform: translateX(-1px);
       z-index: 500;
       padding: 48px 40px;
       overflow-y: scroll;
       @media (max-width: $miniphone-width-divider) {
         padding: 28px 20px;
       }
+    }
+
+    @media (min-width: $tablet-width-divider) {
+      // max-width: 1600px;
     }
   }
 
@@ -83,16 +93,25 @@
 }
 
 .header-nav {
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
-  margin-bottom: 306px;
-  @media (max-width: $miniphone-width-divider) {
-    margin-bottom: 206px;
+  // margin: 0 calc(50vw - 312px);
+  flex-wrap: wrap;
+  width: calc(100vw - 332px);
+  justify-content: space-evenly;
+
+  @media (max-width: $phone-width-divider) {
+    display: block;
+    margin-bottom: 306px;
+    @media (max-width: $miniphone-width-divider) {
+      margin-bottom: 206px;
+    }
   }
 
-  @media (min-width: $phone-width-divider) {
-    display: flex;
-  }
+  // @media (min-width: $tablet-width-divider) {
+  //   // max-width: 1600px;
+  // }
 
   &__link {
     @extend %standart-transition--color;
@@ -130,6 +149,7 @@
     border-radius: 2px;
     position: absolute;
     left: 0;
+    top: 44px;
   }
 
   &__item {
@@ -143,23 +163,31 @@
       margin-bottom: 16px;
     }
     @media (min-width: $phone-width-divider) {
-      margin: 0 var(--standart-50px) 0 0;
+      // margin: 0 var(--standart-50px) 0 0;
+      margin: auto 0;
     }
   }
 }
 
 .header-contacts {
-  @extend .header-nav;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  flex-wrap: wrap;
+  margin: 0;
 
-  position: relative;
-  margin-bottom: 64px;
-  height: 100px;
-  @media (max-width: $miniphone-width-divider) {
-    height: 70px;
+  @media (max-width: $phone-width-divider) {
+    display: block;
+    position: relative;
+    margin-bottom: 64px;
+    height: 100px;
+    @media (max-width: $miniphone-width-divider) {
+      height: 70px;
+    }
   }
 
-  @media (min-width: $phone-width-divider) {
-    display: block;
+  @media (min-width: $tablet-width-divider) {
+    display: inline-flex;
   }
 
   &__item {
@@ -172,26 +200,30 @@
   }
 
   &__item:first-child {
-    font-weight: 500;
-    font-size: 24px;
     line-height: 1.167;
-    @media (max-width: $miniphone-width-divider) {
-      font-size: 18px;
-    }
-
     color: var(--passive-link-color);
-    bottom: 0;
+    margin-bottom: var(--standart-10px);
+    @media (max-width: $phone-width-divider) {
+      bottom: 0;
+      line-height: 1.167;
+      font-size: 24px;
+      @media (max-width: $miniphone-width-divider) {
+        font-size: 18px;
+      }
+    }
   }
 
   &__item:last-child {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.176;
-    @media (max-width: $miniphone-width-divider) {
-      font-size: 28px;
+    line-height: 1.167;
+    color: var(--passive-link-color);
+    @media (max-width: $phone-width-divider) {
+      line-height: 1.176;
+      top: 0;
+      font-size: 34px;
+      @media (max-width: $miniphone-width-divider) {
+        font-size: 28px;
+      }
     }
-    color: var(--active-link-color);
-    top: 0;
   }
 
   &__link {
@@ -211,7 +243,7 @@
   &__icon-container {
     cursor: pointer;
     fill: currentColor;
-    vertical-align: middle;
+    margin-right: 8px;
     @media (max-width: $phone-width-divider) {
       display: none;
     }

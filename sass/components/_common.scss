@@ -23,7 +23,7 @@ html {
 *::after {
   box-sizing: inherit;
 
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 ul,
@@ -95,22 +95,23 @@ main {
 }
 
 .container {
-  // padding: var(--standart-94px) var(--standart-15px);
-  // text-align: center;
-  max-width: 1200px;
-  // align-items: center;
-  width: 100%;
+  max-width: 738px;
+
+  @media (min-width: $tablet-width-divider) {
+    max-width: 1200px;
+  }
 }
 
 .section {
-  max-width: 1200px;
+  max-width: 738px;
   // min-width: 320px;
   padding: var(--standart-60px) var(--standart-15px);
   text-align: center;
   width: 100%;
 
-  @media (min-width: $phone-width-divider) {
+  @media (min-width: $tablet-width-divider) {
     padding: var(--standart-94px) var(--standart-15px);
+    max-width: 1200px;
   }
 }
 

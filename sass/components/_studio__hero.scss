@@ -1,32 +1,40 @@
 .hero {
   @extend .section;
-  max-width: 480px;
   min-width: 300px;
-  // max-width: 1600px;
   padding: 118px var(--standart-15px);
   background: #2f303a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: $tablet-width-divider;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/main-bg-mobile.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    url('../images/main-bg-tablet.jpg');
 
-  @media (min-width: $phone-width-divider) {
+  @media (max-width: $phone-width-divider) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/main-bg.jpg');
-    max-width: 768px;
+      url('../images/main-bg-phone.jpg');
+    max-width: $phone-width-divider;
+    @media (max-width: $miniphone-width-divider) {
+      background: red;
+    }
   }
 
   @media (min-width: $tablet-width-divider) {
-    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/main-bg-tablet.jpg');
+    max-width: $desktop-width-divider;
   }
 
   &__title {
@@ -37,10 +45,8 @@
     text-transform: uppercase;
     color: var(--white-color);
     letter-spacing: 0.06em;
-    // width: 696px;
-    // height: 120px;
 
-    @media (min-width: $phone-width-divider) {
+    @media (min-width: $tablet-width-divider) {
       line-height: 1.36;
       font-size: 44px;
       max-width: 768px;

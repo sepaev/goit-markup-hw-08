@@ -2,17 +2,27 @@
   @extend .section;
 
   &__content {
+    display: inline-flex;
+    flex-wrap: wrap;
   }
 
   &__content-item {
-    width: auto;
     @media (min-width: $phone-width-divider) {
-      width: 270px;
+      width: calc((100% - 30px) / 2);
+      margin-bottom: var(--standart-30px);
+    }
+  }
+
+  &__content-item:nth-child(odd) {
+    @media (min-width: $phone-width-divider) {
+      margin-right: var(--standart-30px);
     }
   }
 
   &__content-item:not(:last-child) {
-    margin-bottom: var(--standart-30px);
+    @media (max-width: $phone-width-divider) {
+      margin-bottom: var(--standart-30px);
+    }
   }
 
   &__icon-container {
