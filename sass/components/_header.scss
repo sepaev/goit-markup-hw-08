@@ -15,7 +15,7 @@
 
   &__container {
     @extend .container;
-
+    width: 100%;
     @media (min-width: $phone-width-divider) {
       display: inline-flex;
       justify-content: space-between;
@@ -98,12 +98,13 @@
   letter-spacing: 0.02em;
   // margin: 0 calc(50vw - 312px);
   flex-wrap: wrap;
-  width: calc(100vw - 332px);
+  width: calc(100vw - 343px);
   justify-content: space-evenly;
 
   @media (max-width: $phone-width-divider) {
     display: block;
     margin-bottom: 306px;
+    width: 100%;
     @media (max-width: $miniphone-width-divider) {
       margin-bottom: 206px;
     }
@@ -150,6 +151,15 @@
     position: absolute;
     left: 0;
     top: 44px;
+    @media (max-width: 532px) {
+      top: 56px;
+    }
+  }
+
+  &__link--last::after {
+    @media (max-width: 532px) {
+      top: 31px;
+    }
   }
 
   &__item {
@@ -166,24 +176,28 @@
       // margin: 0 var(--standart-50px) 0 0;
       margin: auto 0;
     }
+    @media (max-width: 532px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
 .header-contacts {
+  width: 166px;
   display: block;
   font-weight: 500;
   letter-spacing: 0.02em;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 auto;
 
   @media (max-width: $phone-width-divider) {
-    display: block;
-    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
     margin-bottom: 64px;
-    height: 100px;
-    @media (max-width: $miniphone-width-divider) {
-      height: 70px;
-    }
+
+    // @media (max-width: $miniphone-width-divider) {
+    //   height: 70px;
+    // }
   }
 
   @media (min-width: $tablet-width-divider) {
@@ -195,7 +209,7 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     @media (max-width: $phone-width-divider) {
-      position: absolute;
+      // position: absolute;
     }
   }
 
@@ -204,7 +218,7 @@
     color: var(--passive-link-color);
     margin-bottom: var(--standart-10px);
     @media (max-width: $phone-width-divider) {
-      bottom: 0;
+      margin-bottom: 0;
       line-height: 1.167;
       font-size: 24px;
       @media (max-width: $miniphone-width-divider) {
@@ -217,8 +231,8 @@
     line-height: 1.167;
     color: var(--passive-link-color);
     @media (max-width: $phone-width-divider) {
+      margin-bottom: 32px;
       line-height: 1.176;
-      top: 0;
       font-size: 34px;
       @media (max-width: $miniphone-width-divider) {
         font-size: 28px;

@@ -10,27 +10,24 @@
     align-items: baseline;
     height: 100%;
     padding-bottom: var(--standart-60px);
-  }
-
-  &__title {
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    font-weight: bold;
-    text-align: center;
-    // text-align: left;
-    @media (max-width: $phone-width-divider) {
-      padding-top: var(--standart-60px);
-      padding-bottom: var(--standart-20px);
-    }
+    max-width: $tablet-width-divider;
   }
 }
 
 .footer-contacts {
   text-align: center;
+  width: calc(50% - 2px);
   // text-align: left;
+  display: inline-block;
+
+  @media (max-width: $phone-width-divider) {
+    display: block;
+    width: auto;
+  }
+
+  // @media (min-width: $tablet-width-divider) {
+  //   max-width: 1600px;
+  // }
 
   &__set {
     display: block;
@@ -40,6 +37,9 @@
 
   &__link {
     display: block;
+  }
+
+  &__item:not(:last-child) {
     padding-bottom: 9px;
   }
 

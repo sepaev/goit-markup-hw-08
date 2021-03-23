@@ -18,17 +18,17 @@
   &__set {
     display: flex;
     list-style: none;
-    margin-left: calc(-1 * var(--standart-15px));
-    margin-top: calc(-1 * var(--standart-15px));
+    margin-left: calc(-1 * var(--standart-30px));
+    margin-top: calc(-1 * var(--standart-30px));
     flex-wrap: wrap;
     // width: calc(100% + var(--standart-30px));
   }
 
   &__item {
     @extend %standart-transition--color_and_border;
-    flex-basis: calc(33.3333% - var(--standart-30px));
-    margin-left: var(--standart-15px);
-    margin-top: var(--standart-15px);
+    flex-basis: calc((100% / 3) - var(--standart-30px));
+    margin-left: var(--standart-30px);
+    margin-top: var(--standart-30px);
     background: var(--white-color);
     display: inline-flex;
     border: 1px solid var(--grey-color);

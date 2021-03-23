@@ -20,7 +20,8 @@
   color: var(--white-color);
   line-height: 1.19;
   margin-bottom: 20px;
+  display: inline-flex;
+
   @media (max-width: $phone-width-divider) {
-    display: inline-flex;
   }
 }
