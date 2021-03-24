@@ -217,7 +217,7 @@
 
   @media (min-width: $tablet-width-divider) {
     display: inline-block;
-
+    margin: auto 0 auto auto;
     width: auto;
     @media (max-width: 900px) {
       width: 166px;
