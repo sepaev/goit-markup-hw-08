@@ -23,7 +23,7 @@ html {
 *::after {
   box-sizing: inherit;
 
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 ul,
@@ -112,6 +112,7 @@ main {
   @media (min-width: $tablet-width-divider) {
     padding: var(--standart-94px) var(--standart-15px);
     max-width: 1200px;
+    display: inline-block;
   }
 }
 

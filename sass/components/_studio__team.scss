@@ -3,11 +3,21 @@
   // padding: 0px;
   background: var(--light-grey-color);
   max-width: 100%;
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width-divider) {
+    padding: 0px;
+  }
 
   &__container {
     @extend .container;
+    display: inline-block;
     @media (max-width: $phone-width-divider) {
       display: block;
+    }
+    @media (min-width: $tablet-width-divider) {
+      padding: var(--standart-94px) var(--standart-15px);
     }
   }
 
@@ -17,12 +27,16 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + var(--standart-30px));
+    // width: calc(100% + var(--standart-30px));
     margin-left: calc(-1 * var(--standart-30px));
     margin-top: calc(-1 * var(--standart-30px));
 
     @media (max-width: $phone-width-divider) {
       display: block;
+      margin: 0;
+    }
+    @media (max-width: $tablet-width-divider) {
+      display: flex;
     }
   }
 
@@ -31,14 +45,22 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% / 2) - var(--standart-30px));
+    margin-left: var(--standart-30px);
+    margin-top: var(--standart-30px);
 
-    @media (min-width: $phone-width-divider) {
-      flex-basis: calc((100% / 2) - var(--standart-30px));
-      margin-left: var(--standart-30px);
-      margin-top: var(--standart-30px);
+    @media (max-width: $phone-width-divider) {
+      width: 100%;
+      // width: calc(100% - var(--standart-30px));
+      margin: 0;
     }
 
-    // width: calc((100%) / 4 - 90px / 4);
+    @media (min-width: $tablet-width-divider) {
+      width: calc((100%) / 4 - var(--standart-30px));
+      @media (max-width: 1080px) {
+        width: calc((100% / 2) - var(--standart-30px));
+      }
+    }
   }
 
   &__item:not(:last-child) {

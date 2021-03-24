@@ -29,6 +29,13 @@
     width: auto;
     padding-top: 0;
   }
+  @media (min-width: $tablet-width-divider) {
+    margin-top: 12px;
+    // margin-left: 70px;
+    width: 206px;
+    padding-top: 0;
+    // display: flex;
+  }
 
   &__title {
     font-size: 14px;
@@ -73,7 +80,7 @@
 }
 
 .team-social {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   // width: 60%;
   line-height: 0;
@@ -92,10 +99,9 @@
     background: var(--social-background-main-color);
   }
 
-  &__item {
-    margin-right: 10px;
-    color: red;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 10px;
+  // }
 
   &__link:hover,
   &__link:focus {

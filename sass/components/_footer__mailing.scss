@@ -1,6 +1,19 @@
 .form-mailing {
   width: 100%;
   justify-content: flex-end;
+  @media (min-width: $tablet-width-divider) {
+    display: inline-block;
+  }
+  @media (min-width: $tablet-width-divider) {
+    display: flex;
+    width: 570px;
+    @media (max-width: 1080px) {
+      min-width: 300px;
+      max-width: 358px;
+      display: block;
+      margin-right: 15px;
+    }
+  }
 
   &__title {
     font-size: 14px;
@@ -16,6 +29,7 @@
       padding-bottom: var(--standart-20px);
     }
     @media (min-width: $tablet-width-divider) {
+      padding-top: 0;
       text-align: left;
     }
   }
@@ -25,17 +39,6 @@
     min-width: 219px;
     width: 100%;
     flex-direction: column;
-  }
-
-  &__email-input,
-  &__email-input::placeholder {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: var(--passive-link-color-footer);
   }
 
   &__email-input {
@@ -55,8 +58,25 @@
     }
 
     @media (min-width: $tablet-width-divider) {
-      max-width: 358px;
+      width: 358px;
+      margin: 0;
+      @media (max-width: 1080px) {
+        min-width: 300px;
+        max-width: 358px;
+        width: auto;
+      }
     }
+  }
+
+  &__email-input,
+  &__email-input::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--passive-link-color-footer);
   }
 
   &__text {
@@ -75,6 +95,14 @@
     height: 50px;
     letter-spacing: 0.06em;
     display: inline-flex;
+    margin: auto;
+
+    @media (min-width: $tablet-width-divider) {
+      margin-bottom: 0;
+      @media (max-width: 1080px) {
+        display: block;
+      }
+    }
   }
 
   &__subscribe-button:hover {

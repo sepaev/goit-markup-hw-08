@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-position: center;
   max-width: $tablet-width-divider;
+  margin: auto;
+  display: block;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -23,7 +25,6 @@
       url('../images/main-bg-phone.jpg');
     max-width: $phone-width-divider;
     @media (max-width: $miniphone-width-divider) {
-      background: red;
     }
   }
 
@@ -33,8 +34,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/main-bg-tablet.jpg');
+      url('../images/main-bg-desktop.jpg');
     max-width: $desktop-width-divider;
+    padding: 200px var(--standart-15px);
   }
 
   &__title {
@@ -50,6 +52,14 @@
       line-height: 1.36;
       font-size: 44px;
       max-width: 768px;
+    }
+    @media (min-width: $tablet-width-divider) {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+      height: 120px;
+      margin: auto;
+      margin-bottom: var(--standart-30px);
     }
   }
 

@@ -1,10 +1,13 @@
 .logo {
   font-family: var(--second-font);
   font-weight: 700;
-  // font-size: 26px;
   line-height: 1.17;
   font-size: 24px;
   letter-spacing: 0.03em;
+
+  @media (min-width: $tablet-width-divider) {
+    font-size: 26px;
+  }
 
   &__first-word {
     color: var(--logo-main-color);
@@ -14,6 +17,9 @@
 .header__logo {
   color: var(--black-color);
   margin: auto 0;
+  @media (min-width: $tablet-width-divider) {
+    margin-right: 93px;
+  }
 }
 
 .footer__logo {
@@ -22,6 +28,7 @@
   margin-bottom: 20px;
   display: inline-flex;
 
-  @media (max-width: $phone-width-divider) {
+  @media (min-width: $tablet-width-divider) {
+    display: block;
   }
 }

@@ -5,6 +5,10 @@
   @media (max-width: $phone-width-divider) {
     display: none;
   }
+  @media (min-width: $tablet-width-divider) {
+    display: block;
+    margin: auto;
+  }
 
   &__content {
     display: inline-flex;

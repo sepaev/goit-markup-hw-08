@@ -1,15 +1,25 @@
 .features {
   @extend .section;
+  @media (min-width: $tablet-width-divider) {
+    padding-bottom: 0px;
+  }
 
   &__content {
     display: inline-flex;
     flex-wrap: wrap;
+    @media (min-width: $tablet-width-divider) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
 
   &__content-item {
     @media (min-width: $phone-width-divider) {
       width: calc((100% - 30px) / 2);
       margin-bottom: var(--standart-30px);
+    }
+    @media (min-width: $tablet-width-divider) {
+      max-width: 270px;
     }
   }
 
@@ -22,6 +32,9 @@
   &__content-item:not(:last-child) {
     @media (max-width: $phone-width-divider) {
       margin-bottom: var(--standart-30px);
+    }
+    @media (min-width: $tablet-width-divider) {
+      margin-right: var(--standart-30px);
     }
   }
 

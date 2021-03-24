@@ -21,6 +21,7 @@
 .modal {
   position: relative;
   margin: auto;
+  width: 100%;
   max-width: 450px;
   // min-width: 528px;
   // min-height: 609px;
@@ -38,6 +39,9 @@
     margin: auto var(--standart-15px);
     padding: 25px;
     margin: var(--standart-30px) var(--standart-15px);
+  }
+  @media (min-width: $tablet-width-divider) {
+    max-width: 528px;
   }
 
   &__title {
@@ -81,6 +85,9 @@
     font-style: normal;
     font-weight: normal;
     letter-spacing: 0.01em;
+    @media (min-width: $tablet-width-divider) {
+      font-size: 12px;
+    }
   }
 
   &__input-icon {
