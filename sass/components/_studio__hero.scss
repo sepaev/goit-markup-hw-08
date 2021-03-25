@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/main-bg-tablet.jpg');
+    url('../images/x1/main-bg-tablet.jpg');
 
   @media (max-width: $phone-width-divider) {
     background-image: linear-gradient(
@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/main-bg-phone.jpg');
+      url('../images/x1/main-bg-phone.jpg');
     max-width: $phone-width-divider;
     @media (max-width: $miniphone-width-divider) {
     }
@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/main-bg-desktop.jpg');
+      url('../images/x1/main-bg-desktop.jpg');
     max-width: $desktop-width-divider;
     padding: 200px var(--standart-15px);
   }
