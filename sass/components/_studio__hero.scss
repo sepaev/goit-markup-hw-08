@@ -16,6 +16,19 @@
     ),
     url('../images/x1/main-bg-tablet.jpg');
 
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/x2/main-bg-tablet.jpg');
+  }
+
   @media (max-width: $phone-width-divider) {
     background-image: linear-gradient(
         to right,
@@ -24,7 +37,17 @@
       ),
       url('../images/x1/main-bg-phone.jpg');
     max-width: $phone-width-divider;
-    @media (max-width: $miniphone-width-divider) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/x2/main-bg-phone.jpg');
     }
   }
 
@@ -37,6 +60,18 @@
       url('../images/x1/main-bg-desktop.jpg');
     max-width: $desktop-width-divider;
     padding: 200px var(--standart-15px);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/x2/main-bg-desktop.jpg');
+    }
   }
 
   &__title {
