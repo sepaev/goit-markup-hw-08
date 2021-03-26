@@ -1,5 +1,6 @@
 .clients {
   @extend .section;
+  margin: auto;
 
   &__container {
     @extend .container;

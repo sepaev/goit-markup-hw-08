@@ -17,6 +17,10 @@
 .header__logo {
   color: var(--black-color);
   margin: auto 0;
+  margin-right: 88px;
+  @media (max-width: $phone-width-divider) {
+    margin-right: 0px;
+  }
   @media (min-width: $tablet-width-divider) {
     margin-right: 93px;
   }

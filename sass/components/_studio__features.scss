@@ -1,7 +1,23 @@
 .features {
   @extend .section;
+
+  @media (max-width: $phone-width-divider) {
+    display: inline-block;
+    margin: auto;
+  }
   @media (min-width: $tablet-width-divider) {
     padding-bottom: 0px;
+  }
+
+  &__container {
+    @media (min-width: $phone-width-divider) {
+      margin-top: calc(-1 * var(--standart-30px));
+      margin-left: calc(-1 * var(--standart-30px));
+    }
+    @media (max-width: $phone-width-divider) {
+      display: inline-flex;
+      margin: auto;
+    }
   }
 
   &__content {
@@ -15,8 +31,9 @@
 
   &__content-item {
     @media (min-width: $phone-width-divider) {
-      width: calc((100% - 30px) / 2);
-      margin-bottom: var(--standart-30px);
+      width: calc((100% - 60px) / 2);
+      margin-top: var(--standart-30px);
+      margin-left: var(--standart-30px);
     }
     @media (min-width: $tablet-width-divider) {
       max-width: 270px;
@@ -25,7 +42,7 @@
 
   &__content-item:nth-child(odd) {
     @media (min-width: $phone-width-divider) {
-      margin-right: var(--standart-30px);
+      // margin-right: var(--standart-30px);
     }
   }
 
@@ -34,7 +51,7 @@
       margin-bottom: var(--standart-30px);
     }
     @media (min-width: $tablet-width-divider) {
-      margin-right: var(--standart-30px);
+      // margin-right: var(--standart-30px);
     }
   }
 

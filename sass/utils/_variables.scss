@@ -37,7 +37,11 @@
   --second-font: 'Raleway', sans-serif; /*дополнительный шрифт*/
 }
 
-$miniphone-width-divider: 365px;
-$phone-width-divider: 481px;
-$tablet-width-divider: 769px;
+$miniphone-width-divider: 480px;
+$phone-width-divider: 767px;
+$tablet-width-divider: 1200px;
 $desktop-width-divider: 1600px;
+// $miniphone-width-divider: 365px;
+// $phone-width-divider: 481px;
+// $tablet-width-divider: 769px;
+// $desktop-width-divider: 1600px;

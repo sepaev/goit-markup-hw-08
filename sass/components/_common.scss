@@ -23,7 +23,7 @@ html {
 *::after {
   box-sizing: inherit;
 
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 ul,
@@ -97,10 +97,14 @@ main {
 }
 
 .container {
-  max-width: 768px;
+  max-width: $phone-width-divider;
 
   @media (min-width: $tablet-width-divider) {
-    max-width: 1200px;
+    max-width: $tablet-width-divider;
+
+    // @media (min-width: $desktop-width-divider) {
+    //   max-width: $desktop-width-divider;
+    // }
   }
 }
 
@@ -110,11 +114,14 @@ main {
   padding: var(--standart-60px) var(--standart-15px);
   text-align: center;
   width: 100%;
-
+  display: inline-block;
+  @media (max-width: $phone-width-divider) {
+    max-width: 480px;
+    display: block;
+  }
   @media (min-width: $tablet-width-divider) {
     padding: var(--standart-94px) var(--standart-15px);
     max-width: 1200px;
-    display: inline-block;
   }
 }
 

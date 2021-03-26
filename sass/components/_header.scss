@@ -1,11 +1,11 @@
 .header {
-  padding: 0 15px;
+  margin: auto;
   border: 1px solid var(--border-color);
   background: var(--white-color);
   position: relative;
   text-align: left;
   align-items: center;
-  height: 80px;
+  min-height: 80px;
   width: 100%;
   display: flex;
 
@@ -21,14 +21,16 @@
     @extend .container;
     width: 100%;
     display: inline-block;
+    padding: var(--standart-20px) var(--standart-15px);
     margin: auto;
-    @media (min-width: $phone-width-divider) {
-      display: inline-flex;
-      justify-content: space-between;
+    display: inline-flex;
+    justify-content: space-between;
+    @media (max-width: $phone-width-divider) {
+      padding: 16px var(--standart-15px);
     }
-    // @media (min-width: $tablet-width-divider) {
-    //   padding: 24px var(--standart-15px) 25px;
-    // }
+    @media (min-width: $tablet-width-divider) {
+      padding: 24px var(--standart-15px) 25px;
+    }
   }
 
   &__menu-container {
@@ -44,15 +46,17 @@
       outline: 1px solid var(--white-color);
       width: 100%;
       height: 100%;
-      min-width: 400px;
+      min-width: $phone-width-divider;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 500;
       padding: 48px 40px;
-      overflow-y: scroll;
+      overflow-x: scroll;
+
       @media (max-width: $miniphone-width-divider) {
-        padding: 28px 20px;
+        overflow-x: scroll;
+        min-width: 350px;
       }
     }
 
@@ -68,19 +72,21 @@
   }
 
   &__menu-button {
-    // display: inline-flex;
-    position: absolute;
+    @extend %standart-transition--color;
+    display: none;
     top: 10px;
     right: 20px;
     width: 40px;
     height: 40px;
     z-index: 1500;
     fill: currentColor;
-    @extend %standart-transition--color;
-    @media (min-width: $phone-width-divider) {
-      display: none;
+    position: absolute;
+
+    @media (max-width: $phone-width-divider) {
+      display: block;
     }
   }
+
   &__menu-button:hover {
     color: var(--active-link-color);
     @extend %standart-transition--color;
@@ -108,17 +114,14 @@
   letter-spacing: 0.02em;
   // margin: 0 calc(50vw - 312px);
   flex-wrap: wrap;
-  width: calc(100vw - 343px);
-  justify-content: space-evenly;
+  width: 294px;
+  justify-content: space-between;
   margin: auto;
 
   @media (max-width: $phone-width-divider) {
     display: block;
     margin-bottom: 306px;
     width: 100%;
-    @media (max-width: $miniphone-width-divider) {
-      margin-bottom: 206px;
-    }
   }
 
   @media (min-width: $tablet-width-divider) {
@@ -131,13 +134,12 @@
     position: relative;
     color: var(--main-text-color);
     font-weight: 500;
+
     @media (max-width: $phone-width-divider) {
+      width: 100%;
       font-size: 40px;
       line-height: 1.175;
       letter-spacing: 0.02em;
-    }
-    @media (max-width: $miniphone-width-divider) {
-      font-size: 30px;
     }
   }
 
@@ -183,15 +185,13 @@
 
   &__item:not(:last-child) {
     @media (max-width: $phone-width-divider) {
-      // margin: 0 0 32px 0;
-      margin: auto 0;
-      @media (max-width: $miniphone-width-divider) {
-        margin-bottom: 16px;
-      }
+      margin: 0 0 32px 0;
+      // margin: auto 0;
     }
-    @media (max-width: 534px) {
-      margin-bottom: 10px;
-    }
+
+    // @media (max-width: 534px) {
+    //   margin-bottom: 10px;
+    // }
     @media (min-width: $tablet-width-divider) {
       margin: auto var(--standart-50px) auto 0;
     }
@@ -199,29 +199,33 @@
 }
 
 .header-contacts {
-  width: 166px;
   display: block;
   font-weight: 500;
   letter-spacing: 0.02em;
   flex-wrap: wrap;
   margin: 0 0 0 auto;
+  width: 138px;
+  height: 38px;
 
   @media (max-width: $phone-width-divider) {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 0 64px;
-    @media (max-width: $miniphone-width-divider) {
-      // background: red;
-    }
+    min-width: $miniphone-width-divider;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 
   @media (min-width: $tablet-width-divider) {
-    display: inline-block;
+    display: flex;
     margin: auto 0 auto auto;
     width: auto;
-    @media (max-width: 900px) {
-      width: 166px;
-    }
+    padding: 0;
+    height: auto;
+    // @media (max-width: 900px) {
+    //   width: 166px;
+    // }
   }
 
   &__item {
@@ -229,15 +233,33 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     @media (max-width: $phone-width-divider) {
-      // position: absolute;
+      min-width: $miniphone-width-divider;
+      width: 100%;
     }
     @media (min-width: $tablet-width-divider) {
       margin: auto 0;
     }
   }
 
-  &__item:first-child {
-    display: contents;
+  &__link {
+    @extend %standart-transition--color;
+    color: var(--passive-link-color);
+    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.167;
+    display: flex;
+    @media (max-width: $phone-width-divider) {
+      display: block;
+      color: currentColor;
+    }
+
+    @media (min-width: $tablet-width-divider) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link.menu__mail-link {
     line-height: 1.167;
     color: var(--passive-link-color);
     margin-bottom: var(--standart-10px);
@@ -245,37 +267,20 @@
       margin-bottom: 0;
       line-height: 1.167;
       font-size: 24px;
-      @media (max-width: $miniphone-width-divider) {
-        font-size: 18px;
-      }
     }
     @media (min-width: $tablet-width-divider) {
       margin: auto var(--standart-30px) auto 0;
     }
   }
 
-  &__item:last-child {
-    display: contents;
+  &__link.menu__tel-link {
     line-height: 1.167;
-    color: var(--passive-link-color);
     @media (max-width: $phone-width-divider) {
+      color: var(--active-link-color);
       display: flex;
       margin-bottom: 32px;
       line-height: 1.176;
       font-size: 34px;
-      width: 90vw;
-      @media (max-width: $miniphone-width-divider) {
-        font-size: 28px;
-      }
-    }
-  }
-
-  &__link {
-    @extend %standart-transition--color;
-    color: var(--passive-link-color);
-    letter-spacing: 0.03em;
-    @media (min-width: 960px) {
-      margin: auto 0 auto var(--standart-30px);
     }
   }
 
