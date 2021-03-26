@@ -1,6 +1,11 @@
 .form-mailing {
   width: 100%;
   justify-content: flex-end;
+  padding: 60px 6px 0 20px;
+  @media (max-width: $phone-width-divider) {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width-divider) {
     display: inline-block;
   }
@@ -23,10 +28,9 @@
     color: var(--white-color);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
-    padding-top: var(--standart-60px);
+    margin-bottom: var(--standart-20px);
     @media (max-width: $phone-width-divider) {
-      padding-bottom: var(--standart-20px);
+      padding: 0;
     }
     @media (min-width: $tablet-width-divider) {
       padding-top: 0;
@@ -49,8 +53,9 @@
     border-radius: 4px;
     background-color: transparent;
 
-    width: 58.59%;
-    margin: 0 19.79% var(--standart-20px) 21.61%;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto var(--standart-20px) auto;
 
     @media (max-width: $phone-width-divider) {
       margin: 0 0 var(--standart-20px) 0;
@@ -58,12 +63,14 @@
     }
 
     @media (min-width: $tablet-width-divider) {
-      width: 358px;
+      max-width: 358px;
       margin: 0;
+
       @media (max-width: 1080px) {
-        min-width: 300px;
+        min-width: 285px;
         max-width: 358px;
         width: auto;
+        margin-bottom: var(--standart-20px);
       }
     }
   }
@@ -99,8 +106,10 @@
 
     @media (min-width: $tablet-width-divider) {
       margin-bottom: 0;
+      margin-left: 12px;
       @media (max-width: 1080px) {
         display: block;
+        margin-left: auto;
       }
     }
   }

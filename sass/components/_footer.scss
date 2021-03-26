@@ -1,6 +1,6 @@
 .footer {
   @extend .section;
-  padding-bottom: 0;
+  padding: 0;
   min-height: 252px;
   color: var(--white-color);
   background: var(--secondary-background-color);
@@ -14,7 +14,7 @@
     @extend .container;
     align-items: baseline;
     height: 100%;
-    padding-bottom: var(--standart-60px);
+    padding: var(--standart-60px) var(--standart-15px);
     max-width: $tablet-width-divider;
 
     @media (min-width: $tablet-width-divider) {
@@ -36,6 +36,7 @@
   @media (max-width: $phone-width-divider) {
     display: block;
     width: auto;
+    margin-bottom: var(--standart-60px);
   }
 
   @media (min-width: $tablet-width-divider) {

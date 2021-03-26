@@ -76,7 +76,9 @@ body {
   text-align: center;
 
   &.menu-open {
-    overflow: hidden;
+    @media (max-width: $phone-width-divider) {
+      overflow: hidden;
+    }
   }
 }
 

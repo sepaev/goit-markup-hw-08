@@ -550,8 +550,10 @@ body {
   text-align: center;
 }
 
-body.menu-open {
-  overflow: hidden;
+@media (max-width: 481px) {
+  body.menu-open {
+    overflow: hidden;
+  }
 }
 
 button {
@@ -714,9 +716,9 @@ nav {
     background-color: var(--white-color);
     outline: 1px solid var(--white-color);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     min-width: 400px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 500;
@@ -991,6 +993,9 @@ nav {
 
 @media (max-width: 481px) {
   .header-contacts__item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 32px;
     line-height: 1.176;
     font-size: 34px;
@@ -1072,6 +1077,7 @@ nav {
   .footer-social {
     display: block;
     width: auto;
+    margin-bottom: var(--standart-60px);
     padding-top: 0;
   }
 }
@@ -1093,13 +1099,6 @@ nav {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-}
-
-@media (max-width: 481px) {
-  .footer-social__title {
-    padding-top: var(--standart-60px);
-    padding-bottom: var(--standart-20px);
-  }
 }
 
 @media (min-width: 769px) {
@@ -1140,6 +1139,9 @@ nav {
   margin: 0 auto;
   height: 44px;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
 }
 
 .team-social__item {
@@ -1261,17 +1263,10 @@ nav {
 
 @media (min-width: 769px) {
   .hero__title {
-    line-height: 1.36;
-    font-size: 44px;
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 769px) {
-  .hero__title {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
+    max-width: 768px;
     height: 120px;
     margin: auto;
     margin-bottom: var(--standart-30px);
@@ -1522,12 +1517,6 @@ nav {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1080px) {
-  .team__item {
-    width: calc((100% / 2) - var(--standart-30px));
-  }
-}
-
 @media (max-width: 481px) {
   .team__item:not(:last-child) {
     margin-bottom: var(--standart-30px);
@@ -1654,6 +1643,7 @@ nav {
 }
 
 .modal {
+  border: 15px solid transparent;
   position: relative;
   margin: auto;
   width: 100%;
@@ -1670,11 +1660,16 @@ nav {
   overflow: auto;
 }
 
-@media (max-width: 365px) {
+@media (max-width: 481px) {
+  .modal {
+    margin: auto var(--standart-15px);
+  }
+}
+
+@media (max-width: 481px) and (max-width: 365px) {
   .modal {
     margin: auto var(--standart-15px);
     padding: 25px;
-    margin: var(--standart-30px) var(--standart-15px);
   }
 }
 
@@ -2078,7 +2073,7 @@ nav {
 }
 
 .footer {
-  padding-bottom: 0;
+  padding: 0;
   min-height: 252px;
   color: var(--white-color);
   background: var(--secondary-background-color);
@@ -2097,7 +2092,7 @@ nav {
       -ms-flex-align: baseline;
           align-items: baseline;
   height: 100%;
-  padding-bottom: var(--standart-60px);
+  padding: var(--standart-60px) var(--standart-15px);
   max-width: 769px;
 }
 
@@ -2125,6 +2120,7 @@ nav {
   .footer-contacts {
     display: block;
     width: auto;
+    margin-bottom: var(--standart-60px);
   }
 }
 
@@ -2174,6 +2170,13 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 60px 6px 0 20px;
+}
+
+@media (max-width: 481px) {
+  .form-mailing {
+    padding: 0;
+  }
 }
 
 @media (min-width: 769px) {
@@ -2208,13 +2211,12 @@ nav {
   color: var(--white-color);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
-  padding-top: var(--standart-60px);
+  margin-bottom: var(--standart-20px);
 }
 
 @media (max-width: 481px) {
   .form-mailing__title, .form-mailing__text {
-    padding-bottom: var(--standart-20px);
+    padding: 0;
   }
 }
 
@@ -2246,8 +2248,9 @@ nav {
           filter: drop-shadow(0px 4px 4px var(--black-15color));
   border-radius: 4px;
   background-color: transparent;
-  width: 58.59%;
-  margin: 0 19.79% var(--standart-20px) 21.61%;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto var(--standart-20px) auto;
 }
 
 @media (max-width: 481px) {
@@ -2259,16 +2262,17 @@ nav {
 
 @media (min-width: 769px) {
   .form-mailing__email-input {
-    width: 358px;
+    max-width: 358px;
     margin: 0;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
   .form-mailing__email-input {
-    min-width: 300px;
+    min-width: 285px;
     max-width: 358px;
     width: auto;
+    margin-bottom: var(--standart-20px);
   }
 }
 
@@ -2343,12 +2347,14 @@ nav {
 @media (min-width: 769px) {
   .form-mailing__subscribe-button {
     margin-bottom: 0;
+    margin-left: 12px;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
   .form-mailing__subscribe-button {
     display: block;
+    margin-left: auto;
   }
 }
 

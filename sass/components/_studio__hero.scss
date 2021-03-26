@@ -1,4 +1,6 @@
 .hero {
+  // режим таблетки
+
   @extend .section;
   min-width: 300px;
   padding: 118px var(--standart-15px);
@@ -29,6 +31,8 @@
       url('../images/x2/main-bg-tablet.jpg');
   }
 
+  // режим телефона
+
   @media (max-width: $phone-width-divider) {
     background-image: linear-gradient(
         to right,
@@ -50,6 +54,8 @@
         url('../images/x2/main-bg-phone.jpg');
     }
   }
+
+  // режим десктопа
 
   @media (min-width: $tablet-width-divider) {
     background-image: linear-gradient(
@@ -83,15 +89,12 @@
     color: var(--white-color);
     letter-spacing: 0.06em;
 
-    @media (min-width: $tablet-width-divider) {
-      line-height: 1.36;
-      font-size: 44px;
-      max-width: 768px;
-    }
+    // режим десктопа
     @media (min-width: $tablet-width-divider) {
       font-size: 44px;
       line-height: 1.36;
       width: 696px;
+      max-width: 768px;
       height: 120px;
       margin: auto;
       margin-bottom: var(--standart-30px);

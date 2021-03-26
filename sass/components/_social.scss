@@ -27,6 +27,7 @@
   @media (max-width: $phone-width-divider) {
     display: block;
     width: auto;
+    margin-bottom: var(--standart-60px);
     padding-top: 0;
   }
   @media (min-width: $tablet-width-divider) {
@@ -46,10 +47,10 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    @media (max-width: $phone-width-divider) {
-      padding-top: var(--standart-60px);
-      padding-bottom: var(--standart-20px);
-    }
+    // @media (max-width: $phone-width-divider) {
+    //   padding-top: var(--standart-60px);
+    //   padding-bottom: var(--standart-20px);
+    // }
     @media (min-width: $tablet-width-divider) {
       text-align: left;
     }
@@ -87,6 +88,8 @@
   margin: 0 auto;
   height: 44px;
   text-align: center;
+  flex-wrap: wrap;
+  height: auto;
 
   &__item {
     width: 44px;
