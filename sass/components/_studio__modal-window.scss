@@ -37,13 +37,13 @@
   font-size: 12px;
   overflow: auto;
 
-  @media (max-width: $phone-width-divider) {
+  // @media (max-width: $phone-width-divider) {
+  //   margin: auto var(--standart-15px);
+  @media (max-width: $miniphone-width-divider) {
     margin: auto var(--standart-15px);
-    @media (max-width: $miniphone-width-divider) {
-      margin: auto var(--standart-15px);
-      padding: 25px;
-    }
+    padding: 25px;
   }
+  // }
   @media (min-width: $tablet-width-divider) {
     max-width: 528px;
   }

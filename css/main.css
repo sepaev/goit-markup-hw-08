@@ -492,7 +492,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: 1px solid red;
 }
 
 ul,
@@ -1719,13 +1718,7 @@ nav {
   overflow: auto;
 }
 
-@media (max-width: 767px) {
-  .modal {
-    margin: auto var(--standart-15px);
-  }
-}
-
-@media (max-width: 767px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .modal {
     margin: auto var(--standart-15px);
     padding: 25px;
@@ -1970,6 +1963,10 @@ nav {
   background-color: var(--button-hover-color);
 }
 
+.portfolio {
+  margin: auto;
+}
+
 .filters {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2026,6 +2023,12 @@ nav {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .product__wrapper {
+    max-width: 450px;
+  }
+}
+
 .product__description {
   position: absolute;
   left: 0;
@@ -2063,6 +2066,8 @@ nav {
   .product__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 

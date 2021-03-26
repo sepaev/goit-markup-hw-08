@@ -15,6 +15,9 @@
     overflow: hidden;
     // flex-wrap: wrap;
     // display: flex;
+    @media (max-width: $phone-width-divider) {
+      max-width: 450px;
+    }
   }
 
   &__description {
@@ -47,6 +50,8 @@
 
     @media (max-width: $phone-width-divider) {
       flex-basis: 100%;
+      margin-left: 0;
+      margin-top: 0;
     }
 
     @media (min-width: $tablet-width-divider) {
