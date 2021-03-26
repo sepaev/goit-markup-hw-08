@@ -601,7 +601,7 @@ main {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-bottom: var(--standart-30px);
+  margin-bottom: var(--standart-30px);
 }
 
 nav {
