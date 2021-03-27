@@ -39,6 +39,7 @@
     height: 100vh;
     height: auto;
     justify-content: flex-end;
+    @extend %standart-transition--transform;
 
     @media (max-width: $phone-width-divider) {
       display: block;
@@ -53,6 +54,7 @@
       z-index: 500;
       padding: 48px 40px;
       overflow-x: scroll;
+      transform: translateX(0%);
 
       @media (max-width: $miniphone-width-divider) {
         overflow-x: scroll;
@@ -67,7 +69,7 @@
 
   &__menu-container.is-hidden {
     @media (max-width: $phone-width-divider) {
-      display: none;
+      transform: translateX(101%);
     }
   }
 
@@ -120,7 +122,8 @@
 
   @media (max-width: $phone-width-divider) {
     display: block;
-    margin-bottom: 306px;
+    // margin-bottom: 306px;
+    margin-bottom: 30vh;
     width: 100%;
   }
 
@@ -270,6 +273,7 @@
     }
     @media (min-width: $tablet-width-divider) {
       margin: auto var(--standart-30px) auto 0;
+      font-size: 14px;
     }
   }
 
@@ -281,6 +285,9 @@
       margin-bottom: 32px;
       line-height: 1.176;
       font-size: 34px;
+    }
+    @media (min-width: $tablet-width-divider) {
+      font-size: 14px;
     }
   }
 
