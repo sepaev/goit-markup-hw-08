@@ -195,10 +195,10 @@
           <ul class="work__content">
             <li class="work__item">
               <div class="work__thumb">
-                <img
+                <img class="work__picture"
                   srcset="
-                    ./images/x1/working01.jpg 1x,
-                    ./images/x2/working01.jpg 2x
+                    ./images/x1/working01.jpg 370w,
+                    ./images/x2/working01.jpg 740w
                   "
                   src="./images/x1/working01.jpg"
                   alt="Десктопные приложения"
@@ -209,10 +209,10 @@
             </li>
             <li class="work__item">
               <div class="work__thumb">
-                <img
+                <img class="work__picture"
                   srcset="
-                    ./images/x1/working02.jpg 1x,
-                    ./images/x2/working02.jpg 2x
+                    ./images/x1/working02.jpg 370w,
+                    ./images/x2/working02.jpg 740w
                   "
                   src="./images/x1/working02.jpg"
                   alt="Мобильные приложения"
@@ -223,10 +223,10 @@
             </li>
             <li class="work__item">
               <div class="work__thumb">
-                <img
+                <img class="work__picture"
                   srcset="
-                    ./images/x1/working03.jpg 1x,
-                    ./images/x2/working03.jpg 2x
+                    ./images/x1/working03.jpg 370w,
+                    ./images/x2/working03.jpg 740w
                   "
                   src="./images/x1/working03.jpg"
                   alt="Дизайнерские решения"
@@ -246,38 +246,20 @@
           <ul class="team__set">
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/x1/member01--phone.jpg 1x,
-                      ./images/x2/member01--phone.jpg 2x
-                    "
-                    media="(max-width: 768px)"
-                    sizes="(max-width: 768px) 100vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member01--tablet.jpg 1x,
-                      ./images/x2/member01--tablet.jpg 2x
-                    "
-                    media="(max-width: 1200px)"
-                    sizes="(min-width: 769px) 50vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member01--desktop.jpg 1x,
-                      ./images/x2/member01--desktop.jpg 2x
-                    "
-                    media="(min-width: 1201px)"
-                    sizes="(min-width: 1201px) 25vw, 100vw"
-                  />
-                  <img
-                    src="./images/x1/member01--desktop.jpg"
-                    alt="Product Designer"
-                  />
-                </picture>
+                <img
+                  class="team__picture"
+                  alt="Веб-сайт"
+                  src="./images/x1/member01--phone.jpg"
+                  srcset="
+                    ./images/x1/member01--desktop.jpg 270w,
+                    ./images/x1/member01--tablet.jpg  354w,
+                    ./images/x1/member01--phone.jpg   450w,
+                    ./images/x2/member01--desktop.jpg 540w,
+                    ./images/x2/member01--tablet.jpg  708w,
+                    ./images/x2/member01--phone.jpg   900w
+                  "
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, (min-width: 1200px) 270px, 100vw"
+                />
               </div>
               <div class="team__content">
                 <h3 class="team__member">Игорь Демьяненк</h3>
@@ -319,38 +301,20 @@
 
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/x1/member02--phone.jpg 1x,
-                      ./images/x2/member02--phone.jpg 2x
-                    "
-                    media="(max-width: 768px)"
-                    sizes="(max-width: 768px) 100vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member02--tablet.jpg 1x,
-                      ./images/x2/member02--tablet.jpg 2x
-                    "
-                    media="(max-width: 1200px)"
-                    sizes="(min-width: 769px) 50vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member02--desktop.jpg 1x,
-                      ./images/x2/member02--desktop.jpg 2x
-                    "
-                    media="(min-width: 1201px)"
-                    sizes="(min-width: 1201px) 25vw, 100vw"
-                  />
-                  <img
-                    src="./images/x1/member02--desktop.jpg"
-                    alt="Frontend Developer"
-                  />
-                </picture>
+                <img
+                  class="team__picture"
+                  alt="Веб-сайт"
+                  src="./images/x1/member02--phone.jpg"
+                  srcset="
+                    ./images/x1/member02--desktop.jpg 270w,
+                    ./images/x1/member02--tablet.jpg  354w,
+                    ./images/x1/member02--phone.jpg   450w,
+                    ./images/x2/member02--desktop.jpg 540w,
+                    ./images/x2/member02--tablet.jpg  708w,
+                    ./images/x2/member02--phone.jpg   900w
+                  "
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, (min-width: 1200px) 270px, 100vw"
+                />
               </div>
               <div class="team__content">
                 <h3 class="team__member">Ольга Репина</h3>
@@ -392,38 +356,20 @@
 
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/x1/member03--phone.jpg 1x,
-                      ./images/x2/member03--phone.jpg 2x
-                    "
-                    media="(max-width: 768px)"
-                    sizes="(max-width: 768px) 100vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member03--tablet.jpg 1x,
-                      ./images/x2/member03--tablet.jpg 2x
-                    "
-                    media="(max-width: 1200px)"
-                    sizes="(min-width: 769px) 50vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member03--desktop.jpg 1x,
-                      ./images/x2/member03--desktop.jpg 2x
-                    "
-                    media="(min-width: 1201px)"
-                    sizes="(min-width: 1201px) 25vw, 100vw"
-                  />
-                  <img
-                    src="./images/x1/member03--desktop.jpg"
-                    alt="Marketing"
-                  />
-                </picture>
+                <img
+                  class="team__picture"
+                  alt="Веб-сайт"
+                  src="./images/x1/member03--phone.jpg"
+                  srcset="
+                    ./images/x1/member03--desktop.jpg 270w,
+                    ./images/x1/member03--tablet.jpg  354w,
+                    ./images/x1/member03--phone.jpg   450w,
+                    ./images/x2/member03--desktop.jpg 540w,
+                    ./images/x2/member03--tablet.jpg  708w,
+                    ./images/x2/member03--phone.jpg   900w
+                  "
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, (min-width: 1200px) 270px, 100vw"
+                />
               </div>
               <div class="team__content">
                 <h3 class="team__member">Николай Тарасов</h3>
@@ -465,38 +411,20 @@
 
             <li class="team__item">
               <div class="team__thumb">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/x1/member04--phone.jpg 1x,
-                      ./images/x2/member04--phone.jpg 2x
-                    "
-                    media="(max-width: 768px)"
-                    sizes="(max-width: 768px) 100vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member04--tablet.jpg 1x,
-                      ./images/x2/member04--tablet.jpg 2x
-                    "
-                    media="(max-width: 1200px)"
-                    sizes="(min-width: 769px) 50vw, 100vw"
-                  />
-
-                  <source
-                    srcset="
-                      ./images/x1/member04--desktop.jpg 1x,
-                      ./images/x2/member04--desktop.jpg 2x
-                    "
-                    media="(min-width: 1201px)"
-                    sizes="(min-width: 1201px) 25vw, 100vw"
-                  />
-                  <img
-                    src="./images/x1/member04--desktop.jpg"
-                    alt="UI Designer"
-                  />
-                </picture>
+                <img
+                  class="team__picture"
+                  alt="Веб-сайт"
+                  src="./images/x1/member04--phone.jpg"
+                  srcset="
+                    ./images/x1/member04--desktop.jpg 270w,
+                    ./images/x1/member04--tablet.jpg  354w,
+                    ./images/x1/member04--phone.jpg   450w,
+                    ./images/x2/member04--desktop.jpg 540w,
+                    ./images/x2/member04--tablet.jpg  708w,
+                    ./images/x2/member04--phone.jpg   900w
+                  "
+                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px, (min-width: 1200px) 270px, 100vw"
+                />
               </div>
               <div class="team__content">
                 <h3 class="team__member">Миxаил Ермаков</h3>

@@ -20,6 +20,17 @@
     }
   }
 
+  &__picture {
+    width: 354px;
+    @media (max-width: $phone-width-divider) {
+      width: 450px;
+    }
+
+    @media (min-width: $tablet-width-divider) {
+      max-width: 370px;
+    }
+  }
+
   &__description {
     position: absolute;
     left: 0;
@@ -60,7 +71,9 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: var(--standart-30px);
+    @media (max-width: $phone-width-divider) {
+      margin-bottom: var(--standart-30px);
+    }
   }
 
   &__item:hover,

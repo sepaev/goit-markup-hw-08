@@ -79,6 +79,17 @@
     }
   }
 
+  &__picture {
+    width: 354px;
+    @media (max-width: $phone-width-divider) {
+      width: 450px;
+    }
+
+    @media (min-width: $tablet-width-divider) {
+      max-width: 270px;
+    }
+  }
+
   &__content {
     padding: var(--standart-30px);
     padding-bottom: 24px;

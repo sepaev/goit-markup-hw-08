@@ -25,6 +25,11 @@
   --social-background-footer-color: rgba(255, 255, 255, 0.1);
   --focus-outline: 0.1px solid#afb1b870;
   --standart-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ); /*главный градиент фона*/
   --standart-timer: 250ms;
   --standart-10px: 10px;
   --standart-15px: 15px;
