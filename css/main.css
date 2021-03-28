@@ -1603,7 +1603,7 @@ nav {
 
 @media (min-width: 1200px) {
   .team__picture {
-    max-width: 270px;
+    width: 270px;
   }
 }
 
@@ -2071,7 +2071,7 @@ nav {
 
 @media (min-width: 1200px) {
   .product__picture {
-    max-width: 370px;
+    width: 370px;
   }
 }
 
