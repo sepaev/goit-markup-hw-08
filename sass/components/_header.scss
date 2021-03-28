@@ -167,10 +167,7 @@
     border-radius: 2px;
     position: absolute;
     left: 0;
-    top: 44px;
-    @media (max-width: 534px) {
-      top: 56px;
-    }
+    top: 45px;
   }
 
   &__link--last::after {

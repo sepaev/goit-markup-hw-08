@@ -1,6 +1,6 @@
 .team {
   @extend .section;
-  // padding: 0px;
+  padding: 0px;
   background: var(--light-grey-color);
   max-width: 100%;
   display: block;
@@ -13,9 +13,13 @@
   &__container {
     @extend .container;
     width: 100%;
+    padding: 60px 15px;
     display: inline-block;
     @media (max-width: $phone-width-divider) {
-      display: block;
+      display: inline-block;
+
+      padding: 60px 15px;
+      max-width: $miniphone-width-divider;
     }
     @media (min-width: $tablet-width-divider) {
       padding: var(--standart-94px) var(--standart-15px);

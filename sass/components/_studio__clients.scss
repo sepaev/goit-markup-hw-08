@@ -4,7 +4,8 @@
 
   &__container {
     @extend .container;
-    display: block;
+    display: inline-block;
+    justify-content: center;
   }
 
   &__title {
